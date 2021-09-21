@@ -1,0 +1,449 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/**********************************************   N A V B A R **************************************/
+:root {
+  --primary-white: #fff;
+  --primary-yellow: #ffdf00;
+  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+  --primary-grey: #838080;
+}
+
+.navbar {
+  min-height: 100px;
+}
+
+nav {
+  box-shadow: 2px 2px 12px rgb(0, 0, 0, 0.2);
+}
+
+nav ul {
+  display: flex;
+}
+
+nav a, nav p {
+  margin: 30px;
+  font-family: 'Calibri';
+  font-size: 20px;
+  font-weight: 50;
+  color: var(--primary-white) !important;
+}
+
+nav p {
+  font-stretch: wider;
+}
+
+.navbar-nav > li > a {
+  border-top: 3px solid var(--primary-dark);
+}
+
+nav a.nav link {
+  cursor: pointer;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-top: 3px solid var(--primary-yellow);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 3px solid var(--primary-yellow);
+}
+
+/********************************************** H E A D E R **************************************/
+.header-wrapper {
+  position: relative;
+  background: url(background-wallpaper4.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Calibri';
+}
+
+.main-info h1 {
+  color: var(--primary-yellow);
+  text-transform: uppercase;
+}
+
+/********************************************** T Y P E D  T E X T **************************************/
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+.btn-main-offer {
+  border: 1px solid var(--primary-red);
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 10px 12px 12px 12px;
+  color: var(--primary-white);
+  margin: 2rem;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition: .2s ease-out;
+}
+
+/********************************************** A B O U T **************************************/
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-info {
+  color: var(--primary-yellow);
+  text-transform: uppercase;
+}
+
+.profile {
+  width: 26rem;
+  height: 26rem;
+  border-radius: 56%;
+  object-fit: cover;
+  padding: .3rem;
+  border: 3px solid #282c34
+}
+
+@media(max-width: 468px) {
+  .profile {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+/********************************************** S E R V I C E S **************************************/
+.service {
+  text-align: center;
+  padding-bottom: 2rem;
+  background-color: var(--primary-grey);
+}
+
+.service-header {
+  color: black;
+  text-transform: uppercase;
+}
+
+.service .circle {
+  position: relative;
+  margin: 0.375rem auto;
+  background-color: var(--primary-yellow);
+  border-radius: 50%;
+  width: 3.25rem;
+  height: 3.25rem;
+}
+
+.service .icon {
+  font-size: 1.4rem;
+  position: absolute;
+  color: var(--primary-white);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.service .box {
+  height: 16rem;
+  border-bottom: 0.3125rem solid var(--primary-yellow);
+  padding: 0.625rem;
+  margin-bottom: 1.875rem;
+  background-color: var(--primary-white);
+  transition: 0.3s ease-in-out;
+}
+
+.service .box:hover {
+  background-color: var(--primary-yellow);
+  border-bottom: black;
+}
+
+.service .box:hover .icon {
+  color: black;
+}
+
+.service .box:hover .circle {
+  background-color: var(--primary-white);
+}
+
+
+/********************************************** W O R K  S E C T I O N **************************************/
+
+.work-wrapper {
+  padding: 3rem 0;
+}
+
+.work-image {
+  width: 15rem;
+  height: 8rem;
+  border: 1px solid var(--primary-yellow);
+  padding: 0 0.5rem;
+}
+
+.work-image-box {
+  position: relative;
+  margin: 1rem;
+}
+
+/********************************************** O V E R F L O W **************************************/
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background: black;
+  width: 15rem;
+  height: 8rem;
+  top: 0;
+  border: 1px solid var(--primary-red);
+  cursor: pointer;
+}
+
+.work-image-box:hover .overflow {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
+
+.work-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -8rem;
+  margin-top: 3.6rem;
+  color: var(--primary-yellow);
+  font-size: 1.5rem;
+}
+
+.work-image-box:hover .work-icon {
+  opacity: 70%;
+  transition: 0.3s;
+}
+
+.popupbox-wrapper {
+  margin-top: 10rem;
+}
+
+/********************************************** O V E R F L O W  B O X**************************************/
+.work-image-popupbox {
+  width: 45rem;
+  padding: 0 0.5rem;
+}
+
+.hyper-link {
+  cursor: pointer;
+  color: var(--primary-yellow);
+}
+
+.hyper-link:hover {
+  cursor: pointer;
+  color: var(--primary-red);
+}
+
+
+
+@media(max-width: 768px) {
+  .work-image-popupbox {
+    width: 100%;
+  }
+}
+
+@media(max-height: 570px) {
+  .popupbox-wrapper {
+    height: 100%;
+  }
+
+  .work-image-popupbox {
+    width: 50%;
+  }
+}
+
+@media(max-height: 280px) {
+  .popupbox-wrapper {
+    height: 100%;
+  }
+
+  .work-image-popupbox {
+    width: 30%;
+  }
+}
+
+/********************************************** C O N T A C T **************************************/
+.contact {
+  background-color: rgb(3, 3, 53);
+  padding: 3rem 0;
+}
+
+.contact h1 {
+  color: var(--primary-red);
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contact p {
+  color: var(--primary-white);
+  font-size: (1);
+}
+
+/********************************************** C O N T A C T **************************************/
+.contact input, .contact textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 2px solid var(--primary-grey);
+  border-radius: 0;
+  color: var(--primary-grey);
+  outline: 0 !important;
+  box-shadow: none !important;
+  top: 0;
+  margin-bottom: 1rem;
+  padding-left: 0 !important;
+}
+
+.contact .container {
+  padding: 4rem 0;
+}
+
+.contact input:focus, .contact textarea:focus {
+  background: transparent;
+  color: var(--primary-yellow);
+  border-bottom: 0.125rem solid var(--primary-grey);
+}
+
+.contact textarea {
+  height: 12.2rem;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background: none;
+}
+.line {
+  position: relative;
+  top: -0.8rem;
+  width: 0;
+  height: 0.125rem;
+  background: var(--primary-yellow);
+  display: inline-block;
+}
+
+input:focus+ .line, textarea:focus+ .line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+input.form-control {
+  margin: -0.3rem 0;
+}
+
+textarea.form-control {
+  margin: -0.3rem 0;
+}
+
+.error-message {
+  color: var(--primary-white);
+  background: var(--primary-red);
+  text-align: left;
+}
+
+.success-message {
+  font-weight: 900;
+  color: green;
+}
+
+/********************************************** M E D I A **************************************/
+@media(max-width: 768px) {
+  .contacts {
+    overflow-x: hidden;
+  }
+  
+  .contacts .container {
+    padding: 0 1rem;
+  }
+
+  .contacts p {
+    padding: 0 0.4rem;
+  }
+}
+
+/********************************************** F O O T E R **************************************/
+.footer {
+  background: black;
+  color: var(--primary-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-yellow);
+  cursor: pointer;
+}
+
+.footer {
+  margin-bottom: 0;
+}
+
+.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+.social:hover {
+  transform: translateY(-2px);
+}
