@@ -6,7 +6,7 @@ import Weather from "../images/weather-app.png"
 // FONT AWESOME ICONS
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
-// REACT POPUPBOX
+// REACT POPUPBOX 
 import { PopupboxManager, PopupboxContainer } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css"
 
