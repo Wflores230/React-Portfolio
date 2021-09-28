@@ -1,7 +1,6 @@
 import React from "react"
 import Grad from "../images/grad.jpg"
 
-
 const About = () => {
     return (
         <div id="about" className="container py-5">
