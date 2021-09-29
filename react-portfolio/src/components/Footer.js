@@ -1,17 +1,6 @@
 import React from 'react'
-import {
-    FacebookShareButton,
-    FacebookIcon,
-    TwitterShareButton,
-    TwitterIcon,
-    RedditShareButton,
-    RedditIcon,
-    LinkedinShareButton,
-    LinkedinIcon
-} from 'react-share'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faGithub, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
     return (
