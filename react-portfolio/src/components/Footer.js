@@ -36,10 +36,10 @@ const Footer = () => {
                                 <br></br>
                                 <a className="footer-nav">About Me</a>
                                 <br></br>
-                            </div>
-                            <div className="col">
                                 <a className="footer-nav">Services</a>
                                 <br></br>
+                            </div>
+                            <div className="col">
                                 <a className="footer-nav">Previous Work</a>
                                 <br></br>
                                 <a className="footer-nav">Contact</a>
