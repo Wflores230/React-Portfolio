@@ -6,7 +6,7 @@ import Weather from "../images/weather-app.png"
 // FONT AWESOME ICONS
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
-// REACT POPUPBOX 
+// REACT POPUPBOX
 import { PopupboxManager, PopupboxContainer } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css"
 
@@ -19,11 +19,7 @@ const Work = () => {
         const content = (
             <>
             <img className= "work-image-popupbox" src = { Starwars } alt="Star Wars Quiz Project..." />
-            <p>In every generation there is media that is impactful in development. In our group Star Wars is the most profound, epic, cinematic movie series of our time. This fact is exactly what inspired our team to create this project.
-
-                In the user eyes, we wanted to provide them with an introduction to our application and to entice them to want to take our character quiz. The way we achieved this is providing an introductory statement, which can be found below.
-
-                In life, emotion is fickle. It is said that to control one's emotional state is to harness absolute power. Some galaxians are born predisposed to specific emotions, while others grapple with the temptations of light and darkness incessantly. Ceaselessly grappling with the forces at be leaves many galaxians defenseless against the darkness. </p>
+            <p>This was my first group project. In our group Star Wars is the most profound, epic, cinematic movie series of our time. This fact is exactly what inspired our team to create this project. It is a character quiz! The way we achieved this is providing an introductory statement and you are allowed to select an opion between Strongly Agree, Disgree, and Neutral.</p>
             <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://wflores230.github.io/Star-Wars-Quiz/")}>https://wflores230.github.io/Star-Wars-Quiz/</a>
             <br></br>
             <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Wflores230/Star-Wars-Quiz")}>https://github.com/Wflores230/Star-Wars-Quiz</a>
@@ -48,7 +44,7 @@ const Work = () => {
         const content = (
             <>
             <img className= "work-image-popupbox" src = { Budget } alt="Budget Track Project..." />
-            <p>This is a Budget Tracker application to allow for offline access and functionality. The user will be able <br></br>to add expenses and deposits to their budget with or without a connection. When entering transactions <br></br>offline, they should populate the total when brought back online. This app should give users a fast and <br></br>easy way to track their money is important, but allowing them to access that information anytime is<br></br> even more important. Having offline functionality is paramount to our applications success.</p>
+            <p>This is a Budget Tracker application to allow for offline access and functionality. The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online. This app should give users a fast and easy way to track their money.</p>
             <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://sleepy-thicket-46451.herokuapp.com/")}>https://sleepy-thicket-46451.herokuapp.com/</a>
             <br></br>
             <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Wflores230/Budget-Tracker.git")}>https://github.com/Wflores230/Budget-Tracker.git</a>
@@ -72,7 +68,7 @@ const Work = () => {
         const content = (
             <>
             <img className= "work-image-popupbox" src = { TicketTask } alt="Ticket Task Project..." />
-            <p>This CMS Event Registration app illustrates how developers can use modern frontend and backend<br></br> technologies like node js, mysql, handlebars, and much more to build a functional web application. <br></br>This app not only allows a user to search and get tickets for an event, but also create their own event <br></br>for people to attend. Users can manage events, create event sign ups, create, and sign into an account. </p>
+            <p>This CMS Event Registration app illustrates how developers can use modern frontend and backend technologies like node js, mysql, handlebars, and much more to build a functional web application. This app not only allows a user to search and get tickets for an event, but also create their own event for people to attend. Users can manage events, create event sign ups, create, and sign into an account.</p>
             <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://sleepy-thicket-46451.herokuapp.com/")}>https://sleepy-thicket-46451.herokuapp.com/</a>
             <br></br>
             <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Wflores230/Budget-Tracker.git")}>https://github.com/Wflores230/Budget-Tracker.git</a>
@@ -96,7 +92,7 @@ const Work = () => {
         const content = (
             <>
             <img className= "work-image-popupbox" src = { Weather } alt="Weather App..." />
-            <p>This file contains everything you need to see a fully functional weather app using the Open Weather API.<br></br> You will be able to search for any city name and once you hit search it will give you the current weather <br></br>and a 5 day forcast. You will be displayed a try again alert if the city you typed in isn't an actually city.</p>
+            <p>This file contains everything you need to see a fully functional weather app using the Open Weather API. You will be able to search for any city name and once you hit search it will give you the current weather and a 5 day forcast. You will be displayed a try again alert if the city you typed in isn't an actually city.</p>
             <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://sleepy-thicket-46451.herokuapp.com/")}>https://sleepy-thicket-46451.herokuapp.com/</a>
             <br></br>
             <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Wflores230/Budget-Tracker.git")}>https://github.com/Wflores230/Budget-Tracker.git</a>
