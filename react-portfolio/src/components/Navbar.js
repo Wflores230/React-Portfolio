@@ -14,19 +14,19 @@ const Navbar = () => {
             <div className="collapse navbar-collapse justify-content-end" id="navbarMenu">
               <ul className="navbar-nav">
                     <li className="nav-item active">
-                    <Link smooth={true} to="header" offset={-110} className="nav-link" href="#HOME">HOME</Link>
+                    <Link to="header" offset={-110} className="nav-link" href="#HOME">HOME</Link>
                     </li>
                     <li className="nav-item">
-                    <Link smooth={true} to="about" offset={-110} className="nav-link" href="#ABOUT">ABOUT</Link>
+                    <Link to="about" offset={-110} className="nav-link" href="#ABOUT">ABOUT</Link>
                     </li>
                     <li className="nav-item">
-                    <Link smooth={true} to="services" offset={-110} className="nav-link" href="#SERVICES">SERVICES</Link>
+                    <Link to="services" offset={-110} className="nav-link" href="#SERVICES">SERVICES</Link>
                     </li>
                     <li className="nav-item">
-                    <Link smooth={true} to="work" offset={-110} className="nav-link" href="#WORK">WORK</Link>
+                    <Link to="work" offset={-110} className="nav-link" href="#WORK">WORK</Link>
                     </li>
                     <li className="nav-item">
-                    <Link smooth={true} to="contact" offset={-110} className="nav-link" href="#CONTACT">CONTACT</Link>
+                    <Link to="contact" offset={-110} className="nav-link" href="#CONTACT">CONTACT</Link>
                     </li>
               </ul>
             </div>
