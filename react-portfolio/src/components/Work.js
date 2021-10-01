@@ -114,7 +114,7 @@ const Work = () => {
     return (
      <div id="work" className="work-wrapper">
          <div className="container">
-             <h1 className="text-uppercase text-center py-5">Previous Work</h1>
+             <h1 className="work-header text-center py-5">Previous Work</h1>
              <div className="image-box-wrapper d-flex flex-wrap align-items-center justify-content-center">
                 <div className="work-image-box" onClick={openPopupboxStarwars}>
                     <img className="work-image" src={ Starwars } alt="Star Wars Quiz Project..."/>

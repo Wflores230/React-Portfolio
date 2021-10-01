@@ -40,15 +40,18 @@
 /**********************************************   N A V B A R **************************************/
 :root {
   --primary-white: #fff;
-  --primary-yellow: #ffdf00;
+  --primary-purple: #553d67;
   --primary-dark: rgba(255, 255, 255, 0);
-  --primary-red: #ef4035;
-  --primary-hover-red: #f33501;
-  --primary-grey: #838080;
+  --primary-red: #f64c72;
+  --primary-hover-red: #f14c70;
+  --primary-grey: #99738e;
+  --primary-blue: #2f2fa2;
+  --primary-darkblue: #242582;
 }
 
 .navbar {
   min-height: 100px;
+  background-color: var(--primary-darkblue) !important;
 }
 
 nav {
@@ -80,17 +83,18 @@ nav a.nav link {
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
-  border-top: 3px solid var(--primary-yellow);
+  border-top: 3px solid var(--primary-purple);
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 3px solid var(--primary-yellow);
+  border-top: 3px solid var(--primary-red);
 }
 
 /********************************************** H E A D E R **************************************/
 .header-wrapper {
   position: relative;
-  background: url(background-wallpaper4.jpg) no-repeat;
+  background: rgb(47,47,162);
+  background: linear-gradient(194deg, rgba(47,47,162,1) 11%, rgba(85,61,103,1) 100%);
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -111,7 +115,7 @@ nav a.nav link {
 }
 
 .main-info h1 {
-  color: var(--primary-yellow);
+  color: var(--primary-white);
   text-transform: uppercase;
 }
 
@@ -146,7 +150,7 @@ nav a.nav link {
 }
 
 .about-info {
-  color: var(--primary-yellow);
+  color: var(--primary-purple);
   text-transform: uppercase;
 }
 
@@ -173,14 +177,14 @@ nav a.nav link {
 }
 
 .service-header {
-  color: black;
+  color: var(--primary-white);
   text-transform: uppercase;
 }
 
 .service .circle {
   position: relative;
   margin: 0.375rem auto;
-  background-color: var(--primary-yellow);
+  background-color: var(--primary-purple);
   border-radius: 50%;
   width: 3.25rem;
   height: 3.25rem;
@@ -197,7 +201,7 @@ nav a.nav link {
 
 .service .box {
   height: 16rem;
-  border-bottom: 0.3125rem solid var(--primary-yellow);
+  border-bottom: 0.3125rem solid var(--primary-purple);
   padding: 0.625rem;
   margin-bottom: 1.875rem;
   background-color: var(--primary-white);
@@ -205,7 +209,7 @@ nav a.nav link {
 }
 
 .service .box:hover {
-  background-color: var(--primary-yellow);
+  background-color: var(--primary-purple);
   border-bottom: black;
 }
 
@@ -220,6 +224,11 @@ nav a.nav link {
 
 /********************************************** W O R K  S E C T I O N **************************************/
 
+.work-header {
+  color: var(--primary-darkblue);
+  text-transform: uppercase;
+}
+
 .work-wrapper {
   padding: 3rem 0;
 }
@@ -227,7 +236,7 @@ nav a.nav link {
 .work-image {
   width: 15rem;
   height: 8rem;
-  border: 1px solid var(--primary-yellow);
+  border: 1px solid var(--primary-purple);
   padding: 0 0.5rem;
 }
 
@@ -258,7 +267,7 @@ nav a.nav link {
   opacity: 0;
   margin-left: -8rem;
   margin-top: 3.6rem;
-  color: var(--primary-yellow);
+  color: var(--primary-hover-red);
   font-size: 1.5rem;
 }
 
@@ -279,15 +288,13 @@ nav a.nav link {
 
 .hyper-link {
   cursor: pointer;
-  color: var(--primary-yellow);
+  color: var(--primary-purple);
 }
 
 .hyper-link:hover {
   cursor: pointer;
   color: var(--primary-red);
 }
-
-
 
 @media(max-width: 768px) {
   .work-image-popupbox {
@@ -317,7 +324,7 @@ nav a.nav link {
 
 /********************************************** C O N T A C T **************************************/
 .contact {
-  background-color: rgb(3, 3, 53);
+  background-color: var(--primary-purple);
   padding: 3rem 0;
 }
 
@@ -355,7 +362,7 @@ nav a.nav link {
 
 .contact input:focus, .contact textarea:focus {
   background: transparent;
-  color: var(--primary-yellow);
+  color: var(--primary-white);
   border-bottom: 0.125rem solid var(--primary-grey);
 }
 
@@ -373,7 +380,7 @@ nav a.nav link {
   top: -0.8rem;
   width: 0;
   height: 0.125rem;
-  background: var(--primary-yellow);
+  background: var(--primary-red);
   display: inline-block;
 }
 
@@ -398,7 +405,7 @@ textarea.form-control {
 
 .success-message {
   font-weight: 900;
-  color: green;
+  color: var(--primary-darkblue);
 }
 
 /********************************************** M E D I A **************************************/
@@ -419,18 +426,18 @@ textarea.form-control {
 /********************************************** F O O T E R **************************************/
 .footer {
   background: black;
-  color: var(--primary-grey);
+  color: var(--primary-white);
   padding: 3rem;
 }
 
 .footer a {
   text-decoration: none;
-  color: var(--primary-grey);
+  color: var(--primary-white);
 }
 
 .footer a:hover {
   text-decoration: none;
-  color: var(--primary-yellow);
+  color: var(--primary-blue);
   cursor: pointer;
 }
 

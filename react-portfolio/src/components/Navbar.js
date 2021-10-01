@@ -6,7 +6,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+        <nav className="navbar navbar-expand-lg navbar-light sticky-top">
             <p className="navbar-brand" href="#">Will's Portfolio</p>
             <button className="navbar-toggler" onclick="movebutton()" data-toggle="collapse" data-target="#navbarMenu">
                 <FontAwesomeIcon icon={faBars} style={{ color: "#fff" }}/>
