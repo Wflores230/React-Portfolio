@@ -1,6 +1,7 @@
 # React-Portfolio
 
 ## Link to Deployed Project
+https://wflores230.github.io/React-Portfolio/
 
 
 ## Description
