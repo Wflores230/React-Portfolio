@@ -19,13 +19,17 @@ const Work = () => {
         const content = (
             <>
             <img className= "work-image-popupbox" src = { Starwars } alt="Star Wars Quiz Project..." />
-            <p>This was my first group project. In our group Star Wars is the most profound, epic, cinematic movie series of our time. This fact is exactly what inspired our team to create this project. It is a character quiz! The way we achieved this is providing an introductory statement and you are allowed to select an opion between Strongly Agree, Disgree, and Neutral.</p>
+            <p className="popup-text">This was my first group project. In our group Star Wars is the most profound, epic, cinematic movie series of our time. This fact is exactly what inspired our team to create this project. It is a character quiz! The way we achieved this is providing an introductory statement and you are allowed to select an opion between Strongly Agree, Disgree, and Neutral.</p>
             <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://wflores230.github.io/Star-Wars-Quiz/")}>https://wflores230.github.io/Star-Wars-Quiz/</a>
             <br></br>
             <b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Wflores230/Star-Wars-Quiz")}>https://github.com/Wflores230/Star-Wars-Quiz</a>
             </>
         )
         PopupboxManager.open({content})
+        PopupboxManager.update({  content, config: {
+            titleBar: {  text: "Star Wars Quiz"  }
+    },
+    });
     }
 
     const popupboxConfigStarwars = {
@@ -51,6 +55,10 @@ const Work = () => {
             </>
         )
         PopupboxManager.open({content})
+        PopupboxManager.update({  content, config: {
+            titleBar: {  text: "Budget Tracker"  }
+    },
+    });
     }
 
     const popupboxConfigBudgetTracker = {
@@ -75,12 +83,16 @@ const Work = () => {
             </>
         )
         PopupboxManager.open({content})
+        PopupboxManager.update({  content, config: {
+            titleBar: {  text: "Ticket Task Project"  }
+    },
+    });
     }
 
     const popupboxConfigTicketTask = {
         titleBar: {
             enable: true,
-            text: "Ticket Task"
+            text: "Ticket Task Project"
         },
         fadeIn: true,
         fadeSpeed: 500
@@ -99,6 +111,10 @@ const Work = () => {
             </>
         )
         PopupboxManager.open({content})
+        PopupboxManager.update({  content, config: {
+            titleBar: {  text: "Weather App"  }
+    },
+    });
     }
 
     const popupboxConfigWeatherApp = {
