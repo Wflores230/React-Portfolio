@@ -3,6 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
+
+    
+    function handleExportWithComponent() {
+        window.location = "https://docs.google.com/document/d/1OKkiukWKr1R4lrrU5kFLtRgt9KmxLBONEmhi78c2bwI/edit?usp=sharing";
+      }
+
     return (
         <div className="footer">
             <div className="container">
@@ -32,6 +38,8 @@ const Footer = () => {
                                 <a className="footer-nav">Previous Work</a>
                                 <br></br>
                                 <a className="footer-nav">Contact</a>
+                                <br></br>
+                                <button primary={true} onClick={handleExportWithComponent} className="footer-nav">Resume</button>
                             </div>
                         </div>
                     </div>

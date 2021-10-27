@@ -441,6 +441,21 @@ textarea.form-control {
   cursor: pointer;
 }
 
+.footer button {
+  border: 1px solid var(--primary-blue);
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0;
+  color: var(--primary-blue);
+}
+
+.footer button:hover {
+  text-decoration: none;
+  background-color: var(--primary-darkblue);
+  color: var(--primary-white);
+  transition: .2s ease-out;
+}
+
 .footer {
   margin-bottom: 0;
 }
