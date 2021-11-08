@@ -7,6 +7,8 @@
   pointer-events: none;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -42,11 +44,11 @@
   --primary-white: #fff;
   --primary-purple: #553d67;
   --primary-dark: rgba(255, 255, 255, 0);
-  --primary-red: #f64c72;
-  --primary-hover-red: #f14c70;
+  --primary-red: #f5b506;
+  --primary-hover-red: #f5ae14;
   --primary-grey: #99738e;
-  --primary-blue: #2f2fa2;
-  --primary-darkblue: #242582;
+  --primary-darkblue: #1e1258;
+  --primary-blue: #281376;
 }
 
 .navbar {
@@ -64,9 +66,9 @@ nav ul {
 
 nav a, nav p {
   margin: 30px;
-  font-family: 'Calibri';
   font-size: 20px;
   font-weight: 50;
+  font-family: 'Montserrat';
   color: var(--primary-white) !important;
 }
 
@@ -83,7 +85,7 @@ nav a.nav link {
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
-  border-top: 3px solid var(--primary-purple);
+  border-top: 3px solid;
 }
 
 .navbar-nav > li > a:hover {
@@ -93,11 +95,18 @@ nav a.nav link {
 /********************************************** H E A D E R **************************************/
 .header-wrapper {
   position: relative;
-  background: rgb(47,47,162);
-  background: linear-gradient(194deg, rgba(47,47,162,1) 11%, rgba(85,61,103,1) 100%);
+  background: url(background-image2.png);
   background-size: cover;
   background-position: center;
   height: 90vh;
+}
+
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  background: var(--primary-blue);
+  opacity: .7;
+  position: relative;
 }
 
 .main-info {
@@ -111,7 +120,7 @@ nav a.nav link {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Calibri';
+  font-family: 'Montserrat';
 }
 
 .main-info h1 {
@@ -133,6 +142,7 @@ nav a.nav link {
   padding: 10px 12px 12px 12px;
   color: var(--primary-white);
   margin: 2rem;
+  font-family: 'Montserrat';
 }
 
 .btn-main-offer:hover {
@@ -150,8 +160,14 @@ nav a.nav link {
 }
 
 .about-info {
-  color: var(--primary-purple);
+  color: var(--primary-darkblue);
   text-transform: uppercase;
+  font-family: 'Montserrat';
+}
+
+.about-paragraph {
+  color: var(--primary-blue);
+  font-family: 'Montserrat';
 }
 
 .profile {
@@ -173,18 +189,20 @@ nav a.nav link {
 .service {
   text-align: center;
   padding-bottom: 2rem;
-  background-color: var(--primary-grey);
+  background-color: var(--primary-blue);
+  font-family: 'Montserrat';
 }
 
 .service-header {
   color: var(--primary-white);
   text-transform: uppercase;
+  font-family: 'Montserrat';
 }
 
 .service .circle {
   position: relative;
   margin: 0.375rem auto;
-  background-color: var(--primary-purple);
+  background-color: var(--primary-darkblue);
   border-radius: 50%;
   width: 3.25rem;
   height: 3.25rem;
@@ -201,7 +219,7 @@ nav a.nav link {
 
 .service .box {
   height: 16rem;
-  border-bottom: 0.3125rem solid var(--primary-purple);
+  border-bottom: 0.3125rem solid var(--primary-blue);
   padding: 0.625rem;
   margin-bottom: 1.875rem;
   background-color: var(--primary-white);
@@ -209,8 +227,9 @@ nav a.nav link {
 }
 
 .service .box:hover {
-  background-color: var(--primary-purple);
+  background-color: var(--primary-darkblue);
   border-bottom: black;
+  color: var(--primary-white);
 }
 
 .service .box:hover .icon {
@@ -227,6 +246,7 @@ nav a.nav link {
 .work-header {
   color: var(--primary-darkblue);
   text-transform: uppercase;
+  font-family: 'Montserrat';
 }
 
 .work-wrapper {
@@ -234,9 +254,9 @@ nav a.nav link {
 }
 
 .work-image {
-  width: 15rem;
-  height: 8rem;
-  border: 1px solid var(--primary-purple);
+  width: 26rem;
+  height: 16rem;
+  border: 1px solid var(--primary-blue);
   padding: 0 0.5rem;
 }
 
@@ -250,8 +270,8 @@ nav a.nav link {
   position: absolute;
   opacity: 0;
   background: black;
-  width: 15rem;
-  height: 8rem;
+  width: 26rem;
+  height: 16rem;
   top: 0;
   border: 1px solid var(--primary-red);
   cursor: pointer;
@@ -265,10 +285,10 @@ nav a.nav link {
 .work-icon {
   position: absolute;
   opacity: 0;
-  margin-left: -8rem;
-  margin-top: 3.6rem;
+  margin-left: -14rem;
+  margin-top: 6.5rem;
   color: var(--primary-hover-red);
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .work-image-box:hover .work-icon {
@@ -284,11 +304,38 @@ nav a.nav link {
 .work-image-popupbox {
   width: 45rem;
   padding: 0 0.5rem;
+  height: 350px;
+}
+
+.popup-box-font {
+  font-family: 'Montserrat';
+  padding: 0.5rem;
+  width: 45rem;
+}
+
+.popupbox-titleBar {
+  font-family: 'Montserrat';
+  color: var(--primary-blue);
+}
+
+.popupbox-btn--close {
+  content: 'x';
+  color: black !important;
+  cursor: pointer;
+  background: rgba(155, 155, 155, 0.733) !important;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 20px !important;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
 }
 
 .hyper-link {
   cursor: pointer;
-  color: var(--primary-purple);
+  color: var(--primary-blue);
+  font-family: 'Montserrat';
 }
 
 .hyper-link:hover {
@@ -296,8 +343,13 @@ nav a.nav link {
   color: var(--primary-red);
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1120px) {
   .work-image-popupbox {
+    width: 100%;
+    height: 100%;
+  }
+
+  .popup-box-font {
     width: 100%;
   }
 }
@@ -324,12 +376,12 @@ nav a.nav link {
 
 /********************************************** C O N T A C T **************************************/
 .contact {
-  background-color: var(--primary-purple);
+  background-color: var(--primary-blue);
   padding: 3rem 0;
 }
 
 .contact h1 {
-  color: var(--primary-red);
+  color: var(--primary-white);
   padding: 1.3rem 0;
   text-transform: uppercase;
 }
@@ -346,9 +398,9 @@ nav a.nav link {
   background: none;
   resize: none;
   border: 0;
-  border-bottom: 2px solid var(--primary-grey);
+  border-bottom: 2px solid var(--primary-white);
   border-radius: 0;
-  color: var(--primary-grey);
+  color: var(--primary-white);
   outline: 0 !important;
   box-shadow: none !important;
   top: 0;
@@ -425,7 +477,7 @@ textarea.form-control {
 
 /********************************************** F O O T E R **************************************/
 .footer {
-  background: black;
+  background: var(--primary-darkblue);
   color: var(--primary-white);
   padding: 3rem;
 }
@@ -437,7 +489,7 @@ textarea.form-control {
 
 .footer a:hover {
   text-decoration: none;
-  color: var(--primary-blue);
+  color: var(--primary-red);
   cursor: pointer;
 }
 

@@ -26,7 +26,7 @@ const Services = () => {
                         <div className="col-md-3 col-sm-6">
                             <div className="box">
                             <div className="circle"><FontAwesomeIcon className="icon" icon ={faChartLine} size="2x"></FontAwesomeIcon> </div>
-                                <h3>Soical Media Marketing</h3>
+                                <h3>Social Media Marketing</h3>
                                 <p> Will use digital and traditional strategies to best market your company</p>
                             </div>
                         </div>

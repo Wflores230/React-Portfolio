@@ -6,6 +6,7 @@ import Typed from "react-typed";
 const Header = () => {
     return (
         <div id="header" className ="header-wrapper">
+            <div className ="color-overlay"></div>
             <div className = "main-info">
                 <h1>Web components and Development</h1>
                 <Typed
