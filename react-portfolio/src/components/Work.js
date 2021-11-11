@@ -133,9 +133,10 @@ const Work = () => {
              <h1 className="work-header text-center py-5">Previous Work</h1>
              <div className="image-box-wrapper d-flex flex-wrap align-items-center justify-content-center">
                 <div className="work-image-box" onClick={openPopupboxStarwars}>
+                    <img className="work-image" src={ Starwars } alt="Star Wars Quiz Project..."/>
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="work-icon" icon={faSearchPlus} />
-                    <img className="work-image" src={ Starwars } alt="Star Wars Quiz Project..."/>
+                    <p className="work-title-text">Star Wars Quiz Project</p>
                 </div>   
              
              
@@ -143,6 +144,7 @@ const Work = () => {
                     <img className="work-image" src={ Budget } alt="Budget Tracker Project..."/>
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="work-icon" icon={faSearchPlus} />
+                    <p className="work-title-text">Budget Tracker Project</p>
                 </div>
              
              
@@ -150,6 +152,7 @@ const Work = () => {
                     <img className="work-image" src={ TicketTask } alt="Ticket Task Project..."/>
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="work-icon" icon={faSearchPlus} />
+                    <p className="work-title-text">Ticket Task Project</p>
                 </div>
              
              
@@ -157,6 +160,7 @@ const Work = () => {
                     <img className="work-image" src={ Weather } alt="Weather App Project..."/>
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="work-icon" icon={faSearchPlus} />
+                    <p className="work-title-text">Weather App Project</p>
                 </div>
             </div>
          </div>

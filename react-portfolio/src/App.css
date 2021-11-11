@@ -265,6 +265,31 @@ nav a.nav link {
   margin: 1rem;
 }
 
+.work-title-text {
+  font-family: 'Montserrat';
+  color: var(--primary-blue);
+  font-size: 25px;
+  padding: 5px;
+  font-weight: bolder;
+}
+
+.work-image-box:hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.work-image-box:hover, .work-image-box:focus, .work-image-box:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
 /********************************************** O V E R F L O W **************************************/
 .overflow {
   position: absolute;
@@ -277,7 +302,7 @@ nav a.nav link {
   cursor: pointer;
 }
 
-.work-image-box:hover .overflow {
+.work-image-box:hover .overflow{
   opacity: 60%;
   transition: 0.3s ease-in-out;
 }
@@ -503,7 +528,7 @@ textarea.form-control {
 
 .footer button:hover {
   text-decoration: none;
-  background-color: var(--primary-darkblue);
+  background-color: var(--primary-red);
   color: var(--primary-white);
   transition: .2s ease-out;
 }
