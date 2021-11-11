@@ -18,9 +18,6 @@ const Footer = () => {
                             <p>City Of Middletown</p>
                         </div>
                         <div className="d-flex">
-                            <a href="tel: 555-555-5555">(845)-645-5104</a>
-                        </div>
-                        <div className="d-flex">
                             <p>floreswilliam891@gmail.com</p>
                         </div>
                     </div>

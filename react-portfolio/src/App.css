@@ -409,11 +409,13 @@ nav a.nav link {
   color: var(--primary-white);
   padding: 1.3rem 0;
   text-transform: uppercase;
+  font-family: 'Montserrat';
 }
 
 .contact p {
   color: var(--primary-white);
   font-size: (1);
+  font-family: 'Montserrat';
 }
 
 /********************************************** C O N T A C T **************************************/
@@ -435,6 +437,7 @@ nav a.nav link {
 
 .contact .container {
   padding: 4rem 0;
+  font-family: 'Montserrat';
 }
 
 .contact input:focus, .contact textarea:focus {
@@ -445,6 +448,7 @@ nav a.nav link {
 
 .contact textarea {
   height: 12.2rem;
+  font-family: 'Montserrat';
 }
 
 .contact-btn {
@@ -452,6 +456,7 @@ nav a.nav link {
   width: 100%;
   background: none;
 }
+
 .line {
   position: relative;
   top: -0.8rem;
@@ -535,6 +540,10 @@ textarea.form-control {
 
 .footer {
   margin-bottom: 0;
+}
+
+.footer {
+  font-family: 'Montserrat'!important;
 }
 
 .social {
