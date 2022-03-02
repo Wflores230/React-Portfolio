@@ -17,6 +17,4 @@ Honestly love React and have enjoyed using it on this project. I did have a hard
 Columbia's Full-Stack Web Developer bootcamp for all the assistance and for teaching me all that I have learned.
 
 ## Screenshots
-![Screenshot (114)](https://user-images.githubusercontent.com/76802722/135566351-33b7c12f-a09f-49e9-ac6b-be5ddf4e30bd.png)
-![Screenshot (115)](https://user-images.githubusercontent.com/76802722/135566356-06e28f7f-7c27-4011-aa6e-64abc12600ad.png)
-![Screenshot (116)](https://user-images.githubusercontent.com/76802722/135566362-70ee39ae-c3ab-435d-8d01-9646f7164fb7.png)
+![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/76802722/156462647-4d1839ad-4f0d-4733-a062-4885629f1b5e.gif)
